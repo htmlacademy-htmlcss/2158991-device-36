@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Anastasya Khlebnikova](https://up.htmlacademy.ru/htmlcss/36/user/2158991).
-* Наставник: Иван Ермаков.
+* Наставник: [Иван Ермаков](https://htmlacademy.ru/profile/id2318231).
 
 ---
 
