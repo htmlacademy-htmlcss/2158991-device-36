@@ -159,18 +159,14 @@
                         <select class="select-control" aria-label="Сортировка">
                             <option value="popular">Популярные</option>
                         </select>
-                        <ul class="catalog-control-list">
-                            <li class="catalog-control-item">
+                        <div class="catalog-control">
                                 <a class="catalog-control-link" href="#">
                                     <span class="visually-hidden">Вверх.</span>
                                 </a>
-                            </li>
-                            <li class="catalog-control-item">
                                 <a class="catalog-control-link" href="#">
                                     <span class="visually-hidden">Вниз.</span>
                                 </a>
-                            </li>
-                        </ul>
+                        </div>
                     </section>
 
                     <ul class="product-list">
@@ -205,34 +201,31 @@
                     </ul>
 
                     <button class="button pagination-show-more" type="button">Загрузить ещё</button>
-
-                    <ul class="pagination">
-                        <li class="pagination-item">
-                            <a class="pagination-link pagination-prev pagination-disabled">
-                                <span class="visually-hidden">Назад.</span>
-                            </a>
-                        </li>
-                        <li class="pagination-item">
-                            <a class="pagination-link pagination-current">1</a>
-                        </li>
-                        <li class="pagination-item">
-                            <a class="pagination-link" href="#">2</a>
-                        </li>
-                        <li class="pagination-item">
-                            <a class="pagination-link" href="#">3</a>
-                        </li>
-                        <li class="pagination-item">
-                            <a class="pagination-link" href="#">...</a>
-                        </li>
-                        <li class="pagination-item">
-                            <a class="pagination-link" href="#">15</a>
-                        </li>
-                        <li class="pagination-item">
-                            <a class="pagination-link pagination-next" href="#">
-                                <span class="visually-hidden">Вперёд.</span>
-                            </a>
-                        </li>
-                    </ul>
+                    <div class="pagination-container">
+                        <a class="pagination-link pagination-prev pagination-disabled">
+                            <span class="visually-hidden">Назад.</span>
+                        </a>
+                        <ul class="pagination">
+                            <li class="pagination-item">
+                                <a class="pagination-link pagination-current">1</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a class="pagination-link" href="#">2</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a class="pagination-link" href="#">3</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a class="pagination-link" href="#">...</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a class="pagination-link" href="#">15</a>
+                            </li>
+                        </ul>
+                        <a class="pagination-link pagination-next" href="#">
+                            <span class="visually-hidden">Вперёд.</span>
+                        </a>
+                    </div>
                 </section>
             </div>
 
