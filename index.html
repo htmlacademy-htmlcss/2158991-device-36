@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Девайс</title>
-        <!-- <link rel="stylesheet" href=""> -->
+        <link rel="stylesheet" href="styles/styles.css">
     </head>
     <body>
         <header class="page-header">
@@ -93,7 +93,7 @@
                                 жалит как пчела!
                             </p>
                             <p class="slider-desc">
-                                Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
+                                Этот обычный, на первый взгляд, квадрокоптер оснащен<br> мощным лазером, замаскированным под стандартную камеру.
                             </p>
                             <a class="button slider-link" href="#">Подробнее</a>
                             <dl class="slider-features">
@@ -192,37 +192,49 @@
                 <ul class="categories-list">
                     <li class="categories-item">
                         <a class="categories-link" href="#">
-                            <img src="images/categories/virtual-reality.svg" width="160px" height="160px" alt="Очки виртуальной реальности.">
+                            <div class="categories-link-container">
+                                <img src="images/categories/virtual-reality.svg" width="160px" height="160px" alt="Очки виртуальной реальности.">
+                            </div>
                             <p>Виртуальная реальность</p>
                         </a>
                     </li>
                     <li class="categories-item">
                         <a class="categories-link" href="catalog.html">
-                            <img src="images/categories/monopod.svg" width="160px" height="160px" alt="Монопод для селфи.">
+                            <div class="categories-link-container">
+                                <img src="images/categories/monopod.svg" width="160px" height="160px" alt="Монопод для селфи.">
+                            </div>
                             <p>Моноподы для селфи</p>
                         </a>
                     </li>
                     <li class="categories-item">
                         <a class="categories-link" href="#">
-                            <img src="images/categories/action-camera.svg" width="160px" height="160px" alt="Экшн-камера.">
+                            <div class="categories-link-container">
+                                <img src="images/categories/action-camera.svg" width="160px" height="160px" alt="Экшн-камера.">
+                            </div>
                             <p>Экшн-камеры</p>
                         </a>
                     </li>
                     <li class="categories-item">
                         <a class="categories-link" href="#">
-                            <img src="images/categories/fitness-bracelet.svg" width="160px" height="160px" alt="Фитнес-браслет.">
+                            <div class="categories-link-container">
+                                <img src="images/categories/fitness-bracelet.svg" width="160px" height="160px" alt="Фитнес-браслет.">
+                            </div>
                             <p>Фитнес-браслеты</p>
                         </a>
                     </li>
                     <li class="categories-item">
                         <a class="categories-link" href="#">
-                            <img src="images/categories/smart-watch.svg" width="160px" height="160px" alt="Умные часы.">
+                            <div class="categories-link-container">
+                                <img src="images/categories/smart-watch.svg" width="160px" height="160px" alt="Умные часы.">
+                            </div>
                             <p>Умные часы</p>
                         </a>
                     </li>
                     <li class="categories-item">
                         <a class="categories-link" href="#">
-                            <img src="images/categories/quadrocopter.svg" width="160px" height="160px" alt="Квадрокоптер.">
+                            <div class="categories-link-container">
+                                <img src="images/categories/quadrocopter.svg" width="160px" height="160px" alt="Квадрокоптер.">
+                            </div>
                             <p>Квадрокоптеры</p>
                         </a>
                     </li>
@@ -286,7 +298,7 @@
                         <li class="about-us-item">СДИК</li>
                         <li class="about-us-item">ТоксБерри</li>
                     </ul>
-                    <a class="button about-us-lint" href="#">Подробнее о нас</a>
+                    <a class="button about-us-link" href="#">Подробнее о нас</a>
                 </section>
                 <section class="contacts">
                     <h2 class="contacts-title">Контакты</h2>
@@ -311,7 +323,7 @@
             <section class="news">
                 <div class="news-wrapper">
                     <h2 class="news-title">Подпишитесь<br> на рассылку</h2>
-                    <p>Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+                    <p>Еженедельный дайджест с обзорами новинок,<br> длительными тест-драйвами, распаковками, а также акции,<br> спецпредложения и вот это вот всё.</p>
                 </div>
                 <div class="news-form-wrapper">
                     <form class="news-form" action="#" method="post">
@@ -325,14 +337,14 @@
         </main>
 
         <footer class="page-footer">
-            <div class="container">
+            <div class="page-footer-container">
                 <section class="footer-addres">
                     <h2 class="visually-hidden">Адрес магазина Девайс</h2>
                     <a class="footer-logo">
                         <img class="footer-logo-img" src="images/logo-footer.svg" width="145px" height="36px" alt="Логотип сайта электроники Девайс.">
                     </a>
                     <address class="footer-contacts-address">
-                        Санкт-Петербург, набережная реки Карповки, 5, литера П.
+                        Санкт-Петербург, набережная<br> реки Карповки, 5, литера П.
                     </address>
                 </section>
 
@@ -361,17 +373,17 @@
                 <section class="footer-social">
                     <h2 class="visually-hidden">Социальные сети</h2>
                     <ul class="footer-social-list">
-                        <li class="footer-social-item">
+                        <li class="footer-social-item footer-social-item-telegram">
                             <a class="button" href="https://t.me/htmlacademy">
                                 <span class="visually-hidden">Telegram.</span>
                             </a>
                         </li>
-                        <li class="footer-social-item">
+                        <li class="footer-social-item footer-social-item-youtube">
                             <a class="button" href="https://www.youtube.com/user/htmlacademyru">
                                 <span class="visually-hidden">Youtube.</span>
                             </a>
                         </li>
-                        <li class="footer-social-item">
+                        <li class="footer-social-item footer-social-item-twitter">
                             <a class="button" href="https://twitter.com/htmlacademy_ru">
                                 <span class="visually-hidden">Twitter.</span>
                             </a>
