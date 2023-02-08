@@ -57,8 +57,7 @@ body {
 .search-field input::placeholder {
     font-size: 16px;
     line-height: 20px;
-    color: #000000;
-    opacity: 30%;
+    color: rgb(0, 0, 0, 0.3);
 }
 
 .form-search button {
@@ -366,9 +365,8 @@ body {
 }
 
 .navigation-link-output {
-    color: #000000;
+    color: rgb(0, 0, 0, 0.3);
     text-decoration: none;
-    opacity: 30%;
 }
 
 .inner-header-title {
@@ -409,6 +407,7 @@ body {
     font-size: 16px;
     line-height: 20px;
     list-style: none;
+    color: #000000;
 }
 
 .catalog-filter button {
@@ -481,12 +480,37 @@ body {
     height: 55px;
 }
 
+.pagination-container {
+    background-color: #EBEBEB;
+}
+
 .pagination-prev-link {
+    font-family: 'Raleway', sans-serif;
+    line-height: 21px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.pagination-link {
+    text-decoration: none;
+    color: rgb(68, 68, 68, 0.3);
+}
+
+.pagination-current {
+    color: rgb(68, 68, 68, 0.6);
+}
+
+.pagination {
+    list-style: none;
+}
+
+.pagination-next-link {
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     line-height: 21px;
     letter-spacing: 0.2em;
-    color: #444444;
+    color: #000000;
     text-transform: uppercase;
-    opacity: 30%;
+    text-align: center;
 }
