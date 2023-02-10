@@ -46,9 +46,10 @@ body {
 
 .navigation {
     color: #000000;
+    background-color: #FFE17F;
 }
 
-.search-field {
+.search-field button {
     font-size: 16px;
     line-height: 20px;
     color: #000000;
@@ -57,45 +58,43 @@ body {
 .search-field input::placeholder {
     font-size: 16px;
     line-height: 20px;
-    color: rgb(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .form-search button {
     font-size: 16px;
     line-height: 20px;
     color: #000000;
-    text-align: center;
 }
 
 .navigation-link-user {
-    color: inherit;
+    color: #000000;
     text-decoration: none;
-    text-align: left;
-}
-
-.navigation-item-user {
     position: relative;
+    padding-left: 15px;
 }
 
 .navigation-link-user::before {
     content: '';
     position: absolute;
+    top: 22%;
     width: 15px;
     height: 12px;
     background-image: url("../images/navigation-icon/user-icon.svg");
     background-repeat: no-repeat;
+    margin-left: -28px;
 }
 
 .navigation-link {
-    color: inherit;
+    color: #000000;
     text-decoration: none;
 }
 
-.navigation-item button {
+.navigation-button {
     border: none;
-    font-size: inherit;
-    line-height: inherit;
-    background-color: #FFFFFF;
+    font-size: 18px;
+    line-height: 30px;
+    background-color: #FFE17F;
 }
 
 .namber-of-products {
@@ -105,7 +104,7 @@ body {
 
 .cite-navigation-link {
     font-family: 'Raleway', sans-serif;
-    color: inherit;
+    color: #000000;
     text-decoration: none;
     font-size: 18px;
     line-height: 21px;
@@ -114,13 +113,23 @@ body {
 }
 
 .cite-navigation-catalog-link {
-    color: inherit;
+    color: #000000;
     text-decoration: none;
     font-size: 16px;
     line-height: 18px;
 }
 
-.navigation-list-user, .navigation-list, .cite-navigation-list, .cite-navigation-catalog-list {
+.navigation-list-user,
+.navigation-list,
+.cite-navigation-list,
+.cite-navigation-catalog-list,
+.services-list,
+.services-slider,
+.contacts-schedule-list,
+.footer-social-list,
+.breadcrumbs-item,
+.product-list,
+.pagination {
     list-style: none;
 }
 
@@ -152,6 +161,11 @@ body {
     line-height: 30px;
 }
 
+.categories-item{
+    width: 160px;
+    height: 253px;
+}
+
 .categories-link {
     font-family: 'Raleway', sans-serif;
     line-height: 24px;
@@ -164,10 +178,6 @@ body {
     background-color: #FFE17F;
     width: 160px;
     height: 160px;
-}
-
-.services-list, .services-slider {
-    list-style: none;
 }
 
 .services {
@@ -251,10 +261,6 @@ body {
     color: #444444;
 }
 
-.contacts-schedule-list {
-    list-style: none;
-}
-
 .news {
     background-color: #F0F0F0;
 }
@@ -320,10 +326,6 @@ body {
     color: #FFFFFF;
 }
 
-.footer-social-list {
-    list-style: none;
-}
-
 .footer-social-item {
     position: relative;
     width: 40px;
@@ -365,7 +367,7 @@ body {
 }
 
 .navigation-link-output {
-    color: rgb(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.3);
     text-decoration: none;
 }
 
@@ -374,10 +376,6 @@ body {
     font-size: 50px;
     line-height: 50px;
     color: #000000;
-}
-
-.breadcrumbs-item {
-    list-style: none;
 }
 
 .breadcrumbs-link {
@@ -440,10 +438,6 @@ body {
     background-color: #F0F0F0;
 }
 
-.product-list {
-    list-style: none;
-}
-
 .product-card-link {
     text-decoration: none;
     color: #000000;
@@ -494,15 +488,11 @@ body {
 
 .pagination-link {
     text-decoration: none;
-    color: rgb(68, 68, 68, 0.3);
+    color: rgba(68, 68, 68, 0.3);
 }
 
 .pagination-current {
-    color: rgb(68, 68, 68, 0.6);
-}
-
-.pagination {
-    list-style: none;
+    color: rgba(68, 68, 68, 0.6);
 }
 
 .pagination-next-link {
