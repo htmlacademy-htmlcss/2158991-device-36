@@ -71,18 +71,19 @@ body {
     color: #000000;
     text-decoration: none;
     position: relative;
-    padding-left: 15px;
+    padding-left: 27px;
+    display: flex;
+    align-items: center;
 }
 
 .navigation-link-user::before {
     content: '';
     position: absolute;
-    top: 22%;
     width: 15px;
     height: 12px;
     background-image: url("../images/navigation-icon/user-icon.svg");
     background-repeat: no-repeat;
-    margin-left: -28px;
+    left: 0;
 }
 
 .navigation-link {
