@@ -60,11 +60,12 @@ body {
 .form-search button {
     font-size: 16px;
     line-height: 20px;
-    color: #000000;
 }
 
 .navigation-link-user {
     color: #000000;
+    font-size: 18px;
+    line-height: 30px;
     text-decoration: none;
     position: relative;
     padding-left: 27px;
@@ -85,9 +86,12 @@ body {
 .navigation-link {
     color: #000000;
     text-decoration: none;
+    font-size: 18px;
+    line-height: 30px;
 }
 
 .navigation-button {
+    font-family: 'Rubik', sans-serif;
     border: none;
     font-size: 18px;
     line-height: 30px;
@@ -134,7 +138,6 @@ body {
     font-family: 'Raleway', sans-serif;
     font-size: 50px;
     line-height: 50px;
-    color: #000000;
 }
 
 .slider-link {
@@ -147,15 +150,21 @@ body {
     letter-spacing: 0.2em;
 }
 
+.slider-desc {
+    font-size: 18px;
+    line-height: 30px;
+    color: #444444;
+}
+
 .slider-features-value {
     font-size: 36px;
     line-height: 30px;
-    color: #000000;
 }
 
 .slider-features-name {
     font-size: 16px;
     line-height: 30px;
+    color: #444444;
 }
 
 .categories-item{
@@ -165,6 +174,7 @@ body {
 
 .categories-link {
     font-family: 'Raleway', sans-serif;
+    font-size: 18px;
     line-height: 24px;
     color: #000000;
     text-decoration: none;
@@ -200,7 +210,12 @@ body {
 .services-slider-title {
     font-size: 50px;
     line-height: 50px;
-    color: #000000;
+}
+
+.services-slider-description {
+    font-size: 18px;
+    line-height: 30px;
+    color: #444444;
 }
 
 .delivery {
@@ -220,13 +235,17 @@ body {
     font-family: 'Raleway', sans-serif;
     font-size: 50px;
     line-height: 50px;
-    color: #000000;
+}
+
+.about-us p, .contacts-info {
+    font-size: 18px;
+    line-height: 30px;
+    color: #444444;
 }
 
 .about-us-item {
     font-weight: 700;
     line-height: 20px;
-    color: #000000;
     letter-spacing: -0.02em;
 }
 
@@ -236,6 +255,7 @@ body {
 
 .about-us-link, .contacts-link {
     font-family: 'Raleway', sans-serif;
+    font-size: 18px;
     line-height: 21px;
     text-decoration: none;
     color: #000000;
@@ -252,9 +272,18 @@ body {
 
 .contacts-address {
     font-style: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: #444444;
 }
 
 .contacts-phone {
+    color: #444444;
+}
+
+.contacts-schedule-item {
+    font-size: 18px;
+    line-height: 30px;
     color: #444444;
 }
 
@@ -267,7 +296,12 @@ body {
     font-weight: 800;
     font-size: 50px;
     line-height: 50px;
-    color: #000000;
+}
+
+.news-wrapper p {
+    font-size: 18px;
+    line-height: 30px;
+    color: #444444;
 }
 
 .news-form button {
@@ -287,6 +321,12 @@ body {
     border: none;
     outline:none;
     border-bottom: solid 3px #C4C4C4;
+}
+
+.news-form-wrapper {
+    font-size: 18px;
+    line-height: 30px;
+    color: #444444;
 }
 
 .page-footer {
@@ -310,6 +350,8 @@ body {
 
 .footer-navigation-link {
     font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    line-height: 21px;
     color: #FFFFFF;
     text-decoration: none;
     text-transform: uppercase;
@@ -359,6 +401,8 @@ body {
 /* Стилизация каталога */
 
 .navigation-link-profile {
+    font-size: 18px;
+    line-height: 30px;
     color: #000000;
     text-decoration: none;
 }
@@ -366,6 +410,8 @@ body {
 .navigation-link-output {
     color: rgba(0, 0, 0, 0.3);
     text-decoration: none;
+    font-size: 18px;
+    line-height: 30px;
 }
 
 .inner-header-title {
@@ -385,7 +431,6 @@ body {
 .catalog-filter-title {
     font-size: 16px;
     line-height: 19px;
-    color: #000000;
     letter-spacing: 0.2em;
     text-transform: uppercase;
 }
@@ -402,7 +447,6 @@ body {
     font-size: 16px;
     line-height: 20px;
     list-style: none;
-    color: #000000;
 }
 
 .catalog-filter button {
@@ -425,7 +469,6 @@ body {
     line-height: 19px;
     text-transform: uppercase;
     letter-spacing: 0.2em;
-    color: #000000;
 }
 
 .select-control {
@@ -448,8 +491,10 @@ body {
 
 .product-card-price {
     font-weight: 400;
+    font-size: 18px;
     line-height: 21px;
     text-align: right;
+    color: #444444;
 }
 
 .catalog-products-container {
@@ -477,6 +522,7 @@ body {
 
 .pagination-prev-link {
     font-family: 'Raleway', sans-serif;
+    font-size: 18px;
     line-height: 21px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
@@ -484,6 +530,8 @@ body {
 }
 
 .pagination-link {
+    font-size: 16px;
+    line-height: 20px;
     text-decoration: none;
     color: rgba(68, 68, 68, 0.3);
 }
