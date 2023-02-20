@@ -515,34 +515,36 @@ body {
     margin-left: auto;
 }
 
-.page-footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    width: 1160px;
-    margin: 0 auto;
-}
+/* футер */
 
 .page-footer {
     background-color: #444444;
     color: #FFFFFF;
-    padding-top: 62px;
-    padding-bottom: 61px;
+}
+
+.page-footer-container {
+    display: flex;
+    width: 1160px;
+    height: 321px;
+    margin: 0 auto;
+    justify-content: space-between;
 }
 
 .footer-addres {
     width: 234px;
-    margin-right: 124px;
+    padding-top: 62px;
 }
 
 .footer-contacts-address {
     font-style: normal;
     font-size: 16px;
     line-height: 20px;
-    margin-top: 35px;
+    padding-top: 35px;
 }
 
-.footer-navigation {
+.footer-navigation-social-container {
     width: 444px;
+    padding-top: 137px;
 }
 
 .footer-navigation-list {
@@ -550,6 +552,7 @@ body {
     justify-content: space-between;
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .footer-navigation-link {
@@ -562,26 +565,13 @@ body {
     letter-spacing: 0.2em;
 }
 
-.footer-phone {
-    margin-left: auto;
-}
-
-.footer-phone-number-link {
-    font-style: normal;
-    font-size: 16px;
-    line-height: 20px;
-    color: #FFFFFF;
-}
-
-.footer-social {
-    width: 100%;
-}
-
 .footer-social-list {
     display: flex;
     width: 150px;
+    height: 162px;
     justify-content: space-between;
     margin: 0 auto;
+    align-items: center;
 }
 
 .footer-social-item {
@@ -590,8 +580,27 @@ body {
     height: 40px;
 }
 
-.footer-copy {
+.footer-phone-copy {
+    width: 234px;
+    height: 116px;
+    padding-top: 140px;
+}
+
+.footer-phone-number-link {
+    display: block;
+    width: 175px;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
     margin-left: auto;
+}
+
+.footer-copy-link {
+    display: block;
+    width: 115px;
+    margin-left: auto;
+    margin-top: 63px;
 }
 
 .footer-social-item-telegram a::before {
