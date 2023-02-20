@@ -10,6 +10,7 @@
             <a class="header-logo">
                 <img class="logo" src="images/device.svg" width="145px" height="36px" alt="Логотип сайта электроники Девайс.">
             </a>
+            <div class="navigation-container">
             <nav class="navigation">
                 <div class="navigation-inner">
                     <form class="form-search" action="https://echo.htmlacademy.ru/" method="get">
@@ -71,9 +72,10 @@
                     </li>
                 </ul>
             </nav>
+            </div>
         </header>
 
-        <main class="main-index">
+        <main class="main-index main-container">
             <h1 class="visually-hidden">Магазин электроники Девайс</h1>
 
             <section class="main-slider">
@@ -81,7 +83,7 @@
 
                 <ol class="main-slider">
 
-                    <li class="main-slider-item">
+                    <li class="main-slider-item main-slider-item-show">
                         <h3 class="visually-hidden">Квадрокоптер с мощным лазером.</h3>
                         <div class="slider-img-wrapper">
                             <img class="slider-img" src="images/main-slider/quadrocopter.png" width="560px" height="560px" alt="Квадрокоптер с мощным лазером.">
@@ -117,7 +119,7 @@
                                 правильно!
                             </p>
                             <p class="slider-desc">
-                                Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
+                                Мотивирующие фитнес-браслеты помогут найти в себе силы<br> не пропускать занятия и соблюдать диету.
                             </p>
                             <a class="button slider-link" href="#">Подробнее</a>
                             <dl class="slider-features">
@@ -139,7 +141,7 @@
                                 как Бен Стиллер!
                             </p>
                             <p class="slider-desc">
-                                Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
+                                Самая длинная палка для селфи доступна в нашем магазине.<br> Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
                             </p>
                             <a class="button slider-link" href="#">Подробнее</a>
                             <dl class="slider-features">
@@ -171,7 +173,7 @@
 
                 <ul class="slider-pagination-controls">
                     <li class="slider-pagination-controls-item">
-                        <button class="slider-pagination-controls-button" type="button">
+                        <button class="slider-pagination-controls-button slider-pagination-controls-button-show" type="button">
                             <span class="visually-hidden">1 слайд.</span>
                         </button>
                     </li>
@@ -243,6 +245,7 @@
 
             <section class="services">
                 <h2 class="visually-hidden">Услуги</h2>
+                <div class="services-container">
                 <ul class="services-list">
                     <li class="services-item">
                         <button class="button services-button services-button-current" type="button">Доставка</button>
@@ -255,32 +258,41 @@
                     </li>
                 </ul>
                 <ul class="services-slider">
-                    <li class="services-slider-item">
-                        <h3 class="services-slider-title">Доставка</h3>
-                        <p class="services-slider-description">
-                            Мы с удовольствием доставим ваш товар прямо
-                            к вашему подъезду совершенно бесплатно! Ведь
-                            мы неплохо заработаем, поднимая его на ваш этаж.
-                        </p>
+                    <li class="services-slider-item services-slider-item-show">
+                        <div class="services-slider-container">
+                            <h3 class="services-slider-title">Доставка</h3>
+                            <p class="services-slider-description">
+                                Мы с удовольствием доставим ваш товар прямо<br>
+                                к вашему подъезду совершенно бесплатно! Ведь<br>
+                                мы неплохо заработаем, поднимая его на ваш этаж.
+                            </p>
+                        </div>
                         <img class="services-slider-img" src="images/services-slider/services-delivery-icon.svg" width="136px" height="164px" alt="Доставщик.">
                     </li>
                     <li class="services-slider-item">
-                        <h3 class="services-slider-title">Гарантия</h3>
-                        <p class="services-slider-description">
-                            Если из-за возгорания купленного у нас товара у вас
-                            сгорит дом — не переживайте, мы выдадим вам новый.
-                            Товар, не дом, конечно же.
-                        </p>
+                        <div class="services-slider-container">
+                            <h3 class="services-slider-title">Гарантия</h3>
+                            <p class="services-slider-description">
+                                Если из-за возгорания купленного у нас товара у вас<br>
+                                сгорит дом — не переживайте, мы выдадим вам новый.<br>
+                                Товар, не дом, конечно же.
+                            </p>
+                        </div>
                         <img class="services-slider-img" src="images/services-slider/services-guarantee-icon.svg" width="171px" height="195px" alt="Инструменты.">
                     </li>
                     <li class="services-slider-item">
-                        <h3 class="services-slider-title">Кредит</h3>
-                        <p class="services-slider-description">
-                            Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.
-                        </p>
+                        <div class="services-slider-container">
+                            <h3 class="services-slider-title">Кредит</h3>
+                            <p class="services-slider-description">
+                                Залезть в долговую яму стало проще! Кредитные<br>
+                                консультанты подберут для вас наиболее выгодные<br>
+                                условия кредита. Выгодные для банка, разумеется.
+                            </p>
+                        </div>
                         <img class="services-slider-img" src="images/services-slider/services-credit-icon.svg" width="156px" height="188px" alt="Заёмщик.">
                     </li>
                 </ul>
+                </div>
             </section>
 
             <section class="delivery">
@@ -291,7 +303,7 @@
             <div class="wrapper">
                 <section class="about-us">
                     <h2 class="about-us-title">О нас</h2>
-                    <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+                    <p>Огромный выбор гаджетов не оставит равнодушным<br> гика, который есть в каждом из нас.</p>
                     <p>Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
                     <ul class="about-us-list">
                         <li class="about-us-item">Меловые линии</li>
@@ -303,7 +315,7 @@
                 <section class="contacts">
                     <h2 class="contacts-title">Контакты</h2>
                     <p class="contacts-info">
-                        Вы можете забрать товар сами, заехав в наш офис.
+                        Вы можете забрать товар сами, заехав в наш офис.<br>
                         Заодно сможете проверить работоспособность покупки.
                     </p>
                     <h3 class="contacts-subtitle">Интернет-магазин «Девайс»</h3>
@@ -338,58 +350,58 @@
 
         <footer class="page-footer">
             <div class="page-footer-container">
-                <section class="footer-addres">
-                    <h2 class="visually-hidden">Адрес магазина Девайс</h2>
-                    <a class="footer-logo">
-                        <img class="footer-logo-img" src="images/logo-footer.svg" width="145px" height="36px" alt="Логотип сайта электроники Девайс.">
-                    </a>
-                    <address class="footer-contacts-address">
-                        Санкт-Петербург, набережная<br> реки Карповки, 5, литера П.
-                    </address>
-                </section>
+                    <section class="footer-addres">
+                        <h2 class="visually-hidden">Адрес магазина Девайс</h2>
+                        <a class="footer-logo">
+                            <img class="footer-logo-img" src="images/logo-footer.svg" width="145px" height="36px" alt="Логотип сайта электроники Девайс.">
+                        </a>
+                        <address class="footer-contacts-address">
+                            Санкт-Петербург, набережная реки Карповки, 5, литера П.
+                        </address>
+                    </section>
 
-                <section class="footer-navigation">
-                    <h2 class="visually-hidden">Навигация</h2>
-                    <ul class="footer-navigation-list">
-                        <li class="footer-navigation-item">
-                            <a class="footer-navigation-link" href="#">Доставка</a>
-                        </li>
-                        <li class="footer-navigation-item">
-                            <a class="footer-navigation-link" href="#">Гарантия</a>
-                        </li>
-                        <li class="footer-navigation-item">
-                            <a class="footer-navigation-link" href="#">Контакты</a>
-                        </li>
-                    </ul>
-                </section>
+                    <section class="footer-navigation">
+                        <h2 class="visually-hidden">Навигация</h2>
+                        <ul class="footer-navigation-list">
+                            <li class="footer-navigation-item">
+                                <a class="footer-navigation-link" href="#">Доставка</a>
+                            </li>
+                            <li class="footer-navigation-item">
+                                <a class="footer-navigation-link" href="#">Гарантия</a>
+                            </li>
+                            <li class="footer-navigation-item">
+                                <a class="footer-navigation-link" href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </section>
 
-                <section class="footer-phone">
-                    <h2 class="visually-hidden">Телефон</h2>
-                    <address class="footer-phone-number">
-                        <a class="footer-phone-number-link" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
-                    </address>
-                </section>
+                    <section class="footer-phone">
+                        <h2 class="visually-hidden">Телефон</h2>
+                        <address class="footer-phone-number">
+                            <a class="footer-phone-number-link" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+                        </address>
+                    </section>
 
-                <section class="footer-social">
-                    <h2 class="visually-hidden">Социальные сети</h2>
-                    <ul class="footer-social-list">
-                        <li class="footer-social-item footer-social-item-telegram">
-                            <a class="button" href="https://t.me/htmlacademy">
-                                <span class="visually-hidden">Telegram.</span>
-                            </a>
-                        </li>
-                        <li class="footer-social-item footer-social-item-youtube">
-                            <a class="button" href="https://www.youtube.com/user/htmlacademyru">
-                                <span class="visually-hidden">Youtube.</span>
-                            </a>
-                        </li>
-                        <li class="footer-social-item footer-social-item-twitter">
-                            <a class="button" href="https://twitter.com/htmlacademy_ru">
-                                <span class="visually-hidden">Twitter.</span>
-                            </a>
-                        </li>
-                    </ul>
-                </section>
+                    <section class="footer-social">
+                        <h2 class="visually-hidden">Социальные сети</h2>
+                        <ul class="footer-social-list">
+                            <li class="footer-social-item footer-social-item-telegram">
+                                <a class="button" href="https://t.me/htmlacademy">
+                                    <span class="visually-hidden">Telegram.</span>
+                                </a>
+                            </li>
+                            <li class="footer-social-item footer-social-item-youtube">
+                                <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+                                    <span class="visually-hidden">Youtube.</span>
+                                </a>
+                            </li>
+                            <li class="footer-social-item footer-social-item-twitter">
+                                <a class="button" href="https://twitter.com/htmlacademy_ru">
+                                    <span class="visually-hidden">Twitter.</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
 
                 <div class="footer-copy">
                     <a class="footer-copy-link" href="https://htmlacademy.ru/">
