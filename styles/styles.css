@@ -59,7 +59,7 @@ body {
 .services-slider,
 .contacts-schedule-list,
 .footer-social-list,
-.breadcrumbs-item,
+.breadcrumbs,
 .product-list,
 .pagination {
     list-style: none;
@@ -74,6 +74,7 @@ body {
 
 .navigation-container {
     background-color: #FFE17F;
+    height: 300px;
 }
 
 .navigation {
@@ -89,8 +90,10 @@ body {
 }
 
 .navigation-list {
-    max-width: 360px;
+    display: flex;
+    width: 240px;
     margin-left: auto;
+    justify-content: space-between;
 }
 
 .search-field {
@@ -127,7 +130,12 @@ body {
 }
 
 .navigation-list-user {
+    display: flex;
     margin-left: 27px;
+}
+
+.cite-navigation-list {
+    display: flex;
 }
 
 .navigation-link-user {
@@ -646,6 +654,11 @@ body {
     line-height: 30px;
 }
 
+.inner-header {
+    width: 1040px;
+    margin: 0 auto;
+}
+
 .inner-header-title {
     font-family: 'Raleway', sans-serif;
     font-size: 50px;
@@ -660,11 +673,22 @@ body {
     line-height: 20px;
 }
 
+.filter {
+    width: 320px;
+    padding-left: 60px;
+}
+
 .catalog-filter-title {
     font-size: 16px;
     line-height: 19px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
+}
+
+.breadcrumbs {
+    display: flex;
+    width: 429px;
+    justify-content: space-between;
 }
 
 .catalog-filter-group-title {
@@ -695,6 +719,22 @@ body {
     background-color: #F0F0F0;
 }
 
+.catalog-products-wrapper {
+    display: flex;
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.catalog {
+    width: 840px;
+}
+
+.catalog-sorting {
+    display: flex;
+    padding: 0 40px;
+    justify-content: space-between;
+}
+
 .catalog-sorting h3 {
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
@@ -704,10 +744,15 @@ body {
 }
 
 .select-control {
+    width: 141px;
     font-size: 18px;
     line-height: 30px;
     border: none;
     background-color: #F0F0F0;
+}
+
+.catalog-control {
+width: 60px;
 }
 
 .product-card-link {
@@ -731,8 +776,7 @@ body {
 
 .catalog-products-container {
     background-color: #FFFFFF;
-    /* width: 840px;
-    height: 1310px; */
+    padding: 0 40px;
 }
 
 .pagination-show-more {
@@ -749,7 +793,30 @@ body {
 }
 
 .pagination-container {
+    display: flex;
+    height: 71px;
+    justify-content: space-between;
     background-color: #EBEBEB;
+    align-items: center;
+}
+
+.pagination {
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+}
+
+.pagination-link {
+    display: block;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+    color: rgba(68, 68, 68, 0.3);
+}
+
+.pagination-prev,
+.pagination-next {
+    padding: 25px;
 }
 
 .pagination-prev-link {
@@ -759,13 +826,6 @@ body {
     letter-spacing: 0.2em;
     text-transform: uppercase;
     text-align: center;
-}
-
-.pagination-link {
-    font-size: 16px;
-    line-height: 20px;
-    text-decoration: none;
-    color: rgba(68, 68, 68, 0.3);
 }
 
 .pagination-current {
