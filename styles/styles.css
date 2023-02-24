@@ -200,11 +200,27 @@ body {
 .main-slider {
     width: 1160px;
     margin: 0 auto;
+    margin-top: -150px;
     padding: 0;
 }
 
 .main-slider-item {
     display: none;
+    position: relative;
+}
+
+.main-slider-item::before {
+    position: absolute;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 180px;
+    line-height: 195px;
+    color: #FFFFFF;
+}
+
+.main-slider-item:nth-child(1)::before {
+    content: '01';
+    right: 49px;
 }
 
 .main-slider-item-show {
@@ -220,9 +236,11 @@ body {
     font-family: 'Raleway', sans-serif;
     font-size: 50px;
     line-height: 50px;
+    margin: 122px 0 29px;
 }
 
 .slider-link {
+    display: block;
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     line-height: 21px;
@@ -230,6 +248,10 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.2em;
+    margin: 50px 0;
+    padding: 10px 5px;
+    text-align: center;
+    width: 220px;
 }
 
 .slider-desc {
@@ -309,6 +331,10 @@ body {
     height: 160px;
 }
 
+.categories-link p {
+    margin: 32px 0 0;
+}
+
 .services {
     background-color: #F0F0F0;
     margin: 70px 0;
@@ -361,6 +387,7 @@ body {
 }
 
 .services-slider-title {
+    font-family: 'Raleway', sans-serif;
     font-size: 50px;
     line-height: 50px;
 }
@@ -543,6 +570,11 @@ body {
     padding-top: 62px;
 }
 
+.footer-logo {
+    display: block;
+    height: 36px;
+}
+
 .footer-contacts-address {
     font-style: normal;
     font-size: 16px;
@@ -564,6 +596,7 @@ body {
 }
 
 .footer-navigation-link {
+    display: inline-block;
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     line-height: 21px;
@@ -571,6 +604,18 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.2em;
+}
+
+.footer-navigation-link-first {
+    width: 125px;
+}
+
+.footer-navigation-link-middle {
+    width: 121px;
+}
+
+.footer-navigation-link-last {
+    width: 128px;
 }
 
 .footer-social-list {
@@ -657,6 +702,7 @@ body {
 .inner-header {
     width: 1040px;
     margin: 0 auto;
+    padding-bottom: 34px;
 }
 
 .inner-header-title {
@@ -664,6 +710,7 @@ body {
     font-size: 50px;
     line-height: 50px;
     color: #000000;
+    margin: 35px 0 16px;
 }
 
 .breadcrumbs-link {
@@ -776,7 +823,14 @@ width: 60px;
 
 .catalog-products-container {
     background-color: #FFFFFF;
-    padding: 0 40px;
+    padding: 70px 40px 78px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 44px;
+    column-gap: 40px;
 }
 
 .pagination-show-more {
@@ -790,6 +844,7 @@ width: 60px;
     background-color: #FFFFFF;
     width: 760px;
     height: 55px;
+    margin: 44px 0;
 }
 
 .pagination-container {
