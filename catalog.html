@@ -10,15 +10,17 @@
             <a class="header-logo" href="index.html">
                 <img class="logo" src="images/device.svg" width="145px" height="36px" alt="Логотип сайта электроники Девайс.">
             </a>
-            <div class="navigation-container">
+            <div class="navigation-container navigation-container-catalog">
             <nav class="navigation">
                 <div class="navigation-inner">
                     <form class="form-search" action="https://echo.htmlacademy.ru/" method="get">
                         <label class="search-field">
                             <span class="visually-hidden">Поиск по сайту.</span>
-                            <input type="text" name="search" placeholder="Поиск по сайту">
+                            <input type="text" name="search" placeholder="Текст поиска">
                         </label>
-                        <button type="submit">Найти</button>
+                        <button type="submit">
+                            <span class="visually-hidden">Найти</span>
+                        </button>
                     </form>
                     <ul class="navigation-list-user">
                         <li class="navigation-item-user">
@@ -41,8 +43,21 @@
                     </ul>
                 </div>
                 <ul class="cite-navigation-list">
-                    <li class="cite-navigation-item">
+                    <li class="cite-navigation-item cite-navigation-item-catalog">
                         <a class="cite-navigation-link" href="#">Каталог товаров</a>
+                        <button class="cite-navigation-button">
+                            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle opacity="0.3" cx="25" cy="25" r="24" stroke="black" stroke-width="2"/>
+                                <g opacity="0.3" clip-path="url(#clip0_34099_573)">
+                                <path d="M33 24H26V17H24V24H17V26H24V33H26V26H33V24Z" fill="black"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_34099_573">
+                                <rect width="16" height="16" fill="white" transform="translate(17 17)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
                         <ul class="cite-navigation-catalog-list">
                             <li class="cite-navigation-catalog-item">
                                 <a class="cite-navigation-catalog-link" href="#">Виртуальная реальность</a>
@@ -78,7 +93,7 @@
             </div>
         </header>
 
-        <main class="main-inner main-container">
+        <main class="main-inner ">
             <header class="inner-header">
                 <h1 class="inner-header-title">Моноподы для селфи</h1>
 
@@ -163,10 +178,10 @@
                             <option value="popular">Популярные</option>
                         </select>
                         <div class="catalog-control">
-                            <a class="catalog-control-link" href="#">
+                            <a class="catalog-control-link catalog-control-ascending" href="#">
                                 <span class="visually-hidden">По возрастанию.</span>
                             </a>
-                            <a class="catalog-control-link" href="#">
+                            <a class="catalog-control-link catalog-control-descending" href="#">
                                 <span class="visually-hidden">По убыванию.</span>
                             </a>
                         </div>
@@ -179,35 +194,35 @@
                                 <a class="product-card-link" href="#">
                                     <img class="product-card-img" src="images/catalog-product/product-1.jpg" width="360px" height="380px" alt="Любительская селфи-палка.">
                                     <h3 class="product-card-title">Любительская<br> селфи-палка</h3>
+                                    <b class="product-card-price">500 ₽</b>
                                 </a>
-                                <b class="product-card-price">500 ₽</b>
                             </li>
                             <li class="product-card">
                                 <a class="product-card-link" href="#">
                                     <img class="product-card-img" src="images/catalog-product/product-2.jpg" width="360px" height="380px" alt="Профессиональная селфи-палка.">
                                     <h3 class="product-card-title">Профессиональная<br> селфи-палка</h3>
+                                    <b class="product-card-price">1 500 ₽</b>
                                 </a>
-                                <b class="product-card-price">1500 ₽</b>
                             </li>
                             <li class="product-card">
                                 <a class="product-card-link" href="#">
                                     <img class="product-card-img" src="images/catalog-product/product-3.jpg" width="360px" height="380px" alt="Непотопляемая селфи-палка.">
                                     <h3 class="product-card-title">Непотопляемая<br> селфи-палка</h3>
+                                    <b class="product-card-price">2 500 ₽</b>
                                 </a>
-                                <b class="product-card-price">2500 ₽</b>
                             </li>
                             <li class="product-card">
                                 <a class="product-card-link" href="#">
                                     <img class="product-card-img" src="images/catalog-product/product-4.jpg" width="360px" height="380px" alt="Селфи-палка «Следуй за мной».">
                                     <h3 class="product-card-title">Селфи-палка «Следуй<br> за мной»</h3>
+                                    <b class="product-card-price">1 500 ₽</b>
                                 </a>
-                                <b class="product-card-price">1500 ₽</b>
                             </li>
                         </ul>
 
                         <button class="button pagination-show-more" type="button">Загрузить ещё</button>
                         <div class="pagination-container">
-                            <a class="pagination-link pagination-prev pagination-disabled">
+                            <a class="pagination-prev pagination-disabled">
                                 <span class="pagination-prev-link">Назад</span>
                             </a>
                             <ul class="pagination">
@@ -227,7 +242,7 @@
                                     <a class="pagination-link" href="#">15</a>
                                 </li>
                             </ul>
-                            <a class="pagination-link pagination-next" href="#">
+                            <a class="pagination-next" href="#">
                                 <span class="pagination-next-link">Вперёд</span>
                             </a>
                         </div>
