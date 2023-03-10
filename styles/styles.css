@@ -1131,31 +1131,206 @@ body {
     justify-content: space-between;
 }
 
+.range-scale {
+    width: 200px;
+    position: relative;
+    height: 2px;
+    margin: 8px 0 14px;
+    background-color: #DCDCDC;
+}
+
+.range-bar {
+    position: absolute;
+    height: 2px;
+    background-color: #000000;
+}
+
+.range-toggle {
+    padding: 0;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background-color: #F0F0F0;
+    border: 2px solid #000000;
+    border-width: 2px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.toggle-min {
+    top: -8px;
+    left: -18px;
+}
+
+.toggle-max {
+    top: -8px;
+    right: 0;
+}
+
+.range-wrapper-inputs {
+    display: flex;
+    margin-left: -12px;
+}
+
+.catalog-filter-label {
+    display: flex;
+    color:rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+}
+
+.catalog-filter-label:last-child {
+    margin-left: 72px;
+}
+
+.range-input {
+    color:rgba(0, 0, 0, 0.3);
+    width: 30px;
+    padding: 0;
+    font: inherit;
+    font-size: 14px;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    appearance: textfield;
+  }
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.catalog-filter-label {
+    display: flex;
+    margin: 0;
+}
+
+.catalog-filter-group {
+    border: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 35px;
+}
+
+/* .catalog-filter-group-bluetooth {
+    margin-top: 35px;
+} */
+
+.control {
+    display: flex;
+    row-gap: 17px;
+}
+
+.control-color {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #CCCCCC;
+    border-radius: 3px;
+    margin-right: 16px;
+}
+
+.control-color-current {
+    border: 2px solid #000000;
+}
+
+.control-input[type="checkbox"]:checked + .control-color::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-image: url("../images/check-mark-filter-color.svg");
+    background-repeat: no-repeat;
+    left: 3px;
+    top: 3px;
+}
+
+.control-bluetooth {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #CCCCCC;
+    border-radius: 50%;
+    margin-right: 16px;
+    box-sizing: border-box;
+}
+
+.control-bluetooth-current {
+    border: 2px solid #000000;
+}
+
+.control-input[type="radio"]:checked + .control-bluetooth::before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #000000;
+    border-radius: 50%;
+    left: 4px;
+    top: 4px;
+}
+
+
 .catalog-filter-group-title {
+    width: 200px;
     font-size: 18px;
     font-weight: 700;
     line-height: 20px;
     letter-spacing: -0.02em;
     text-transform: none;
+    margin-bottom: 20px;
+    padding: 0;
+    padding-top: 12px;
+    border-top: 2px solid #000000;
 }
 
 .catalog-filter-list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 17px;
     font-size: 16px;
     line-height: 20px;
     list-style: none;
+    margin: 0;
+    margin-bottom: -2px;
+    padding: 0;
 }
 
-.catalog-filter button {
+.catalog-filter-list-bluetooth {
+    row-gap: 20px;
+}
+
+.catalog-filter-button::before {
+    content: '';
+    width: 220px;
+    height: 8px;
+    position: absolute;
+    background-color: #FFE17F;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.catalog-filter-button {
+    display: block;
+    position: relative;
+    width: 220px;
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     line-height: 21px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     border: none;
-    background-color: #F0F0F0;
+    background-color: transparent;
+    padding: 12px 5px 12px 7px;
+    cursor: pointer;
+    z-index: 2;
 }
 
+
 .catalog-products {
+    position: relative;
     background-color: #F0F0F0;
 }
 
