@@ -149,7 +149,6 @@ body {
 
 .navigation-list-user {
     display: flex;
-    /* margin-left: 27px; */
 }
 
 .cite-navigation-list {
@@ -160,6 +159,10 @@ body {
 
 .cite-navigation-item {
     padding: 15px 23.6px;
+}
+
+.cite-navigation-item:focus-within .cite-navigation-catalog-list {
+    display: grid;
 }
 
 .cite-navigation-item:first-child {
@@ -1221,10 +1224,6 @@ body {
     margin-bottom: 35px;
 }
 
-/* .catalog-filter-group-bluetooth {
-    margin-top: 35px;
-} */
-
 .control {
     display: flex;
     row-gap: 17px;
@@ -1534,4 +1533,403 @@ body {
     color: #000000;
     text-transform: uppercase;
     text-align: center;
+}
+
+/* Стилизация поповера */
+
+.navigation-item {
+    position: relative;
+}
+
+.popover {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    width: 320px;
+    box-sizing: border-box;
+    top: 10;
+    left: -126px;
+}
+
+.popover-open {
+    display: block;
+}
+
+.popover-cart-container {
+    position: relative;
+    background-color: #000000;
+    width: 100%;
+    min-height: 140px;
+    margin-top: 6px;
+    padding-bottom: 20px;
+}
+
+.popover-cart-container::before {
+    content: '';
+    position: absolute;
+    border: 7px solid transparent; border-bottom: 7px solid #000000;
+    top: -14px;
+    left: 153px;
+}
+
+.cart-items-list {
+    padding: 0;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.product-cart-title {
+    color: #FFFFFF;
+    padding-left: 23px;
+    margin: 0;
+}
+
+.product-cart-button {
+    align-self: flex-start;
+    margin-left: auto;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-right: -6px;
+    margin-top: -1px;
+}
+
+.popover-product-num,
+.popover-product-price {
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.popover-product-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 12.5px 20px;
+    background-color: #1A1A1A;
+}
+
+.popover-cart-link {
+    display: block;
+    margin: 21px 20px 0;
+    text-decoration: none;
+}
+
+.popover-cart-link span {
+    display: block;
+    background-color: #FFFFFF;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    line-height: 21px;
+    padding: 14.5px 0;
+    color: #000000;
+}
+
+/* Стилизация модалки */
+
+.modal-container {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 3;
+  }
+
+.modal-container-close {
+    display: none;
+}
+
+.modal-wrapper {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 920px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border: 10px solid #000000;
+    padding: 62px 70px;
+    gap: 42px;
+}
+
+.modal-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+}
+
+.modal-title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 50px;
+    line-height: 50px;
+    margin: 0;
+}
+
+.modal-form-name-email,
+.modal-bring-quantity {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fieldset-name,
+.fieldset-email,
+.fieldset-bring,
+.fieldset-quantity {
+    position: relative;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.fieldset-quantity {
+    display: flex;
+}
+
+.input-name {
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    width: 360px;
+    background-color: #F0F0F0;
+    border: none;
+    padding: 20px;
+    background-image: url("../images/modal-name.svg");
+    background-repeat: no-repeat;
+    background-position: center right 20px;
+    box-sizing: border-box;
+}
+
+/* .input-name::placeholder {
+    font-size: 'Rubik', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.3);
+} */
+
+.legend-name,
+.legend-email,
+.legend-bring,
+.legend-quantity {
+    padding: 0;
+    margin-bottom: 14px;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: -0.02em;
+    line-height: 20px;
+}
+
+.input-email {
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    width: 360px;
+    background-color: #F0F0F0;
+    border: 2px solid #FF3D3D;
+    padding: 20px;
+    background-image: url("../images/modal-email.svg");
+    background-repeat: no-repeat;
+    background-position: center right 20px;
+    box-sizing: border-box;
+}
+
+.input-bring {
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    width: 540px;
+    background-color: #F0F0F0;
+    border: none;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.modal-close-button {
+    position: absolute;
+    padding: 0;
+    top: 74px;
+    right: 70px;
+    border: none;
+    width: 26px;
+    height: 26px;
+    background-image: url("../images/close-modal.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.modal-close-button:hover{
+    opacity: 0.6;
+}
+
+.modal-close-button:active{
+    opacity: 0.3;
+}
+
+.modal-close-button:focus{
+    outline: 2px solid #AF4FFF;
+}
+
+.fieldset-email p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FF3D3D;
+}
+
+.legend-quantity:hover .legend-quantity-info,
+.legend-quantity:focus .legend-quantity-info{
+  display: block;
+}
+
+.legend-quantity-info {
+  position: absolute;
+  width: 200px;
+  box-sizing: border-box;
+  z-index: 1;
+  padding: 19px 17px 19px 19px;
+  background: #000000;
+  top: 34px;
+  left: -26px;
+  display: none;
+  offset: 0, 10px rgba(0, 0, 0, 0.1);
+}
+
+.legend-quantity::before {
+    position: absolute;
+    top: -3px;
+    right: 34px;
+    content: url("../images/modal-info.svg");
+}
+
+.legend-quantity-info-p {
+    position: relative;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.legend-quantity-info::before {
+    content: "";
+    position: absolute;
+    border-width: 7px;
+    border-style: solid;
+    border-color: transparent transparent rgb(0, 0, 0);
+    border-image: initial;
+    top: -14px;
+    left: 153px;
+}
+
+.legend-button-less {
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    border: none;
+    background: #F0F0F0;
+    cursor: pointer;
+}
+
+.legend-button-less::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 2px;
+    background-color: #000000;
+    top: 29px;
+    left: 22px;
+}
+
+.quantity-input-numbers::-webkit-outer-spin-button,
+.quantity-input-numbers::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.quantity-input-numbers {
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    width: 60px;
+    height: 60px;
+    border: none;
+    background: #F0F0F0;
+    text-align: center;
+    padding: 0;
+    appearance: textfield;
+    outline: none;
+}
+
+.legend-button-more {
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    border: none;
+    background: #F0F0F0;
+    cursor: pointer;
+}
+
+.legend-button-more::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 2px;
+    background-color: #000000;
+    top: 29px;
+    left: 22px;
+}
+
+.legend-button-more::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 16px;
+    background-color: #000000;
+    top: 22px;
+    left: 29px;
+}
+
+.modal-button-send::before {
+    position: absolute;
+    content: "";
+    width: 200px;
+    height: 8px;
+    background-color: #FFE17F;
+    left: 0;
+    top: 15px;
+    z-index: -1;
+}
+
+.modal-button-send {
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    z-index: 2;
+    background: none;
+    border: none;
 }
