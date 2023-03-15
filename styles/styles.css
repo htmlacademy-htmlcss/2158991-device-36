@@ -1437,8 +1437,9 @@ body {
 
 .breadcrumbs {
     display: flex;
-    width: 429px;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 8px;
+    column-gap: 36px;
 }
 
 .range-scale {
@@ -2293,8 +2294,8 @@ body {
     line-height: 20px;
 }
 
-.legend-quantity:hover .legend-quantity-info,
-.legend-quantity:focus .legend-quantity-info{
+.legend-quantity:hover +.legend-quantity-info,
+.legend-quantity:focus +.legend-quantity-info{
   display: block;
 }
 
@@ -2305,7 +2306,7 @@ body {
   z-index: 1;
   padding: 19px 17px 19px 19px;
   background: #000000;
-  top: 34px;
+  top: 0;
   left: -26px;
   display: none;
   offset: 0, 10px rgba(0, 0, 0, 0.1);
