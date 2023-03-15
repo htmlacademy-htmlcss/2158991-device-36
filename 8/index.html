@@ -40,22 +40,20 @@
                                     <h2 class="visually-hidden popover-title">Корзина.</h2>
                                     <ul class="cart-items-list">
                                         <li class="cart-item">
-                                            <img class="product-cart-img" src="images/catalog-product/product-1.jpg" width="39" height="43" alt="Любительская селфи-палка.">
-                                            <p class="product-cart-title">Любительская<br> селфи-палка</p>
+                                            <a class="cart-item-link" href="#">
+                                                <img class="product-cart-img" src="images/catalog-product/product-1.jpg" width="39" height="43" alt="Любительская селфи-палка.">
+                                                <p class="product-cart-title">Любительская<br> селфи-палка</p>
+                                            </a>
                                             <button class="product-cart-button">
-                                                <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M10 1.07584L9.09091 0.166748L5 4.25766L0.909091 0.166748L0 1.07584L4.09091 5.16675L0 9.25766L0.909091 10.1667L5 6.07584L9.09091 10.1667L10 9.25766L5.90909 5.16675L10 1.07584Z" fill="white"/>
-                                                </svg>
                                                 <span class="visually-hidden">Удалить из корзины.</span>
                                             </button>
                                         </li>
                                         <li class="cart-item">
-                                            <img class="product-cart-img" src="images/catalog-product/product-2.jpg" width="39" height="43" alt="Профессиональная селфи-палка.">
-                                            <p class="product-cart-title">Профессиональная<br> селфи-палка</p>
+                                            <a class="cart-item-link" href="#">
+                                                <img class="product-cart-img" src="images/catalog-product/product-2.jpg" width="39" height="43" alt="Профессиональная селфи-палка.">
+                                                <p class="product-cart-title">Профессиональная<br> селфи-палка</p>
+                                            </a>
                                             <button class="product-cart-button">
-                                                <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M10 1.07584L9.09091 0.166748L5 4.25766L0.909091 0.166748L0 1.07584L4.09091 5.16675L0 9.25766L0.909091 10.1667L5 6.07584L9.09091 10.1667L10 9.25766L5.90909 5.16675L10 1.07584Z" fill="white"/>
-                                                </svg>
                                                 <span class="visually-hidden">Удалить из корзины.</span>
                                             </button>
                                         </li>
@@ -98,13 +96,19 @@
                         </ul>
                     </li>
                     <li class="cite-navigation-item">
-                        <a class="cite-navigation-link" href="#">Доставка</a>
+                        <a class="cite-navigation-link" href="#">
+                            <span class="cite-navigation-link-text cite-navigation-link-active">Доставка</span>
+                        </a>
                     </li>
                     <li class="cite-navigation-item">
-                        <a class="cite-navigation-link" href="#">Гарантия</a>
+                        <a class="cite-navigation-link" href="#">
+                            <span class="cite-navigation-link-text">Гарантия</span>
+                        </a>
                     </li>
                     <li class="cite-navigation-item">
-                        <a class="cite-navigation-link" href="#">Контакты</a>
+                        <a class="cite-navigation-link" href="#">
+                            <span class="cite-navigation-link-text">Контакты</span>
+                        </a>
                     </li>
                 </ul>
             </nav>
@@ -523,18 +527,18 @@
                     <div class="modal-form-name-email">
                         <fieldset class="fieldset-name">
                             <legend class="legend-name">Ваше имя:</legend>
-                            <input class="input-name" type="text" placeholder="Введите имя" name="name">
+                            <input class="input-name" required type="text" placeholder="Введите имя" name="name">
                         </fieldset>
-                        <fieldset class="fieldset-email fieldset-email-error">
+                        <fieldset class="fieldset-email fieldset-email-invalid">
                             <legend class="legend-email">Ваш e-mail:</legend>
-                            <input class="input-email" type="email" value="почта" name="e-mail">
+                            <input class="input-email" required type="email" value="почта" name="e-mail">
                             <p>Забавный у вас адрес</p>
                         </fieldset>
                     </div>
                     <div class="modal-bring-quantity">
                         <fieldset class="fieldset-bring">
                             <legend class="legend-bring">Что нужно привезти:</legend>
-                            <input class="input-bring" type="text" placeholder="В свободной форме" name="bring-text">
+                            <input class="input-bring" required type="text" placeholder="В свободной форме" name="bring-text">
                         </fieldset>
                         <fieldset class="fieldset-quantity">
                                 <legend class="legend-quantity">Количество:</legend>
