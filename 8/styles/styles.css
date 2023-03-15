@@ -700,6 +700,7 @@ body {
 }
 
 .categories-link {
+    position: relative;
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     line-height: 24px;
@@ -724,6 +725,15 @@ body {
 
 .categories-link:focus {
     outline: 2px solid #AF4FFF;
+}
+
+.categories-link:focus::before {
+    outline: 2px solid #AF4FFF;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    outline-offset: 2px;
 }
 
 .categories-link p {
