@@ -622,6 +622,7 @@ body {
 
 .main-slider-button {
     border: none;
+    height: 60px;
     background-color: transparent;
     padding: 0;
     cursor: pointer;
@@ -707,6 +708,7 @@ body {
     color: #000000;
     text-decoration: none;
     letter-spacing: -0.02em;
+    outline: none;
 }
 
 .categories-link-container {
@@ -723,18 +725,14 @@ body {
     opacity: 0.3;
 }
 
-.categories-link:focus {
-    outline: 2px solid #AF4FFF;
-}
-
 .categories-link:focus::before {
     outline: 2px solid #AF4FFF;
     content: '';
+    width: 160px;
+    height: 253px;
     position: absolute;
-    width: 100%;
-    height: 100%;
-    outline-offset: 2px;
 }
+
 
 .categories-link p {
     margin: 32px 0 0;
@@ -1620,6 +1618,14 @@ body {
     cursor: pointer;
 }
 
+.control-input[type="radio"]:focus+ .control-bluetooth {
+    outline: 2px solid #AF4FFF;
+    }
+
+.control-input[type="checkbox"]:focus+ .control-color {
+outline: 2px solid #AF4FFF;
+}
+
 .control:hover {
     opacity: 0.6;
 }
@@ -2480,9 +2486,9 @@ body {
 
 .legend-quantity::before {
     position: absolute;
-    top: -3px;
     right: 34px;
     content: url("../images/modal-info.svg");
+    transform: translateY(-3px);
 }
 
 .legend-quantity-info-p {
