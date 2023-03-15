@@ -731,6 +731,7 @@ body {
     width: 160px;
     height: 253px;
     position: absolute;
+    outline-offset: 2px;
 }
 
 
