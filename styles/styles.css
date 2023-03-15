@@ -84,6 +84,7 @@ body {
     position: absolute;
     margin-top: 20px;
     margin-left: 60px;
+    cursor: pointer;
 }
 
 .logo:hover {
@@ -208,10 +209,6 @@ body {
 
 .cite-navigation-item {
     padding: 15px 23.6px;
-}
-
-.cite-navigation-item:focus-within .cite-navigation-catalog-list {
-    display: grid;
 }
 
 .cite-navigation-item:first-child {
@@ -383,10 +380,6 @@ body {
     background-color: rgba(0, 0, 0, 1);
 }
 
-.cite-navigation-catalog-list:hover {
-    display: grid;
-}
-
 .cite-navigation-catalog-list {
     display: none;
     position: absolute;
@@ -401,7 +394,9 @@ body {
     z-index: 2;
 }
 
-.cite-navigation-button:hover+.cite-navigation-catalog-list {
+.cite-navigation-item:hover .cite-navigation-catalog-list,
+.cite-navigation-item:focus-within .cite-navigation-catalog-list,
+.cite-navigation-catalog-list:hover {
     display: grid;
 }
 
@@ -584,6 +579,7 @@ body {
     border: none;
     background-color: transparent;
     padding: 0;
+    cursor: pointer;
 }
 
 .main-slider-button:focus {
@@ -617,6 +613,7 @@ body {
     border: 2px solid #000000;
     border-radius: 50%;
     background-color: #FFFFFF;
+    cursor: pointer;
 }
 
 .slider-pagination-controls-button-show {
@@ -1110,6 +1107,7 @@ body {
     padding: 15px 36px;
     border: solid 3px #C4C4C4;
     letter-spacing: 0.2em;
+    cursor: pointer;
 }
 
 .news-form button:focus {
@@ -1539,6 +1537,7 @@ body {
 .control {
     display: flex;
     row-gap: 17px;
+    cursor: pointer;
 }
 
 .control:hover {
@@ -1715,6 +1714,7 @@ body {
     border: none;
     background-color: #F0F0F0;
     margin-right: 9px;
+    cursor: pointer;
 }
 
 .select-control:hover {
