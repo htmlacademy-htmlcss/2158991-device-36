@@ -75,7 +75,7 @@
                 <ul class="cite-navigation-list">
                     <li class="cite-navigation-item cite-navigation-item-catalog">
                         <a class="cite-navigation-link" href="#">Каталог товаров</a>
-                        <button class="cite-navigation-button"></button>
+                        <button class="cite-navigation-button cite-navigation-button-opened"></button>
                         <ul class="cite-navigation-catalog-list">
                             <li class="cite-navigation-catalog-item">
                                 <a class="cite-navigation-catalog-link" href="#">Виртуальная реальность</a>
@@ -138,10 +138,10 @@
                                 <div class="range">
                                     <div class="range-scale">
                                         <div class="range-bar" style="left: 9px; width: 119px">
-                                            <button class="range-toggle toggle-min">
+                                            <button class="range-toggle toggle-min" type="button">
                                                 <span class="visually-hidden">Изменить минимальную цену.</span>
                                             </button>
-                                            <button class="range-toggle toggle-max">
+                                            <button class="range-toggle toggle-max" type="button">
                                                 <span class="visually-hidden">Изменить максимальную цену.</span>
                                             </button>
                                         </div>
@@ -287,7 +287,7 @@
                             </a>
                             <ul class="pagination">
                                 <li class="pagination-item">
-                                    <a class="pagination-link pagination-current">1</a>
+                                    <a class="pagination-link pagination-current" href="#">1</a>
                                 </li>
                                 <li class="pagination-item">
                                     <a class="pagination-link" href="#">2</a>
@@ -415,5 +415,45 @@
                 </div>
             </div>
         </footer>
+        <div class="modal-container modal-container-close">
+            <div class="modal-wrapper">
+                <div class="modal-title-container">
+                    <h2 class="modal-title">Доставка под заказ</h2>
+                    <button class="modal-close-button"></button>
+                </div>
+                <form class="modal-form" action="https://echo.htmlacademy.ru/" method="get">
+                    <div class="modal-form-name-email">
+                        <fieldset class="fieldset-name">
+                            <legend class="legend-name">Ваше имя:</legend>
+                            <input class="input-name" required type="text" placeholder="Введите имя" name="name">
+                        </fieldset>
+                        <fieldset class="fieldset-email fieldset-email-invalid">
+                            <legend class="legend-email">Ваш e-mail:</legend>
+                            <input class="input-email" required type="email" value="почта" name="e-mail">
+                            <p>Забавный у вас адрес</p>
+                        </fieldset>
+                    </div>
+                    <div class="modal-bring-quantity">
+                        <fieldset class="fieldset-bring">
+                            <legend class="legend-bring">Что нужно привезти:</legend>
+                            <input class="input-bring" required type="text" placeholder="В свободной форме" name="bring-text">
+                        </fieldset>
+                        <fieldset class="fieldset-quantity">
+                                <legend class="legend-quantity">Количество:</legend>
+                                <div class="legend-quantity-info">
+                                    <p class="legend-quantity-info-p">Постараемся найти, сколько нужно. Привезём сколько получится по
+                                    требованиям <br>к провозу багажа.</p>
+                                </div>
+                            <div class="legend-button-container">
+                                <button class="legend-button-less" type="button"></button>
+                                <input class="quantity-input-numbers" type="number" value="1" name="quantity">
+                                <button class="legend-button-more" type="button"></button>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <button class="modal-button-send" type="submit">Отправить</button>
+                </form>
+            </div>
+        </div>
     </body>
 </html>

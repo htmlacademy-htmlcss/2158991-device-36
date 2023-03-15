@@ -272,6 +272,14 @@ body {
     cursor: pointer;
 }
 
+.navigation-button:hover {
+    opacity: 0.6;
+}
+
+.navigation-button:active {
+    opacity: 0.3;
+}
+
 .namber-of-products {
     display: flex;
     align-items: center;
@@ -356,7 +364,7 @@ body {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-.cite-navigation-button::after {
+.cite-navigation-button-opened::after {
     content: '';
     position: absolute;
     width: 2px;
@@ -551,6 +559,15 @@ body {
 .slider-link:active::before {
     background-color: #FFCC33;
     height: 100%;
+}
+
+.slider-link:disabled,
+.services-button:disabled,
+.about-us-link:disabled,
+.contacts-link:disabled,
+.catalog-filter-button:disabled,
+.product-card-button span:disabled {
+    opacity: 0.3;
 }
 
 .slider-desc {
@@ -1147,6 +1164,10 @@ body {
     border-color: #000000;
 }
 
+.news-form button:disabled {
+    opacity: 0.3;
+}
+
 .news-form input {
     font-family: 'Rubik', sans-serif;
     font-size: 18px;
@@ -1506,6 +1527,10 @@ body {
     outline: 2px solid #AF4FFF;
 }
 
+.range-input:focus .catalog-filter-label {
+    outline: 2px solid #AF4FFF;
+}
+
 .toggle-min {
     top: -8px;
     left: -18px;
@@ -1573,6 +1598,10 @@ body {
 
 .control:active {
     opacity: 0.3;
+}
+
+.control:disabled {
+    opacity: 0.2;
 }
 
 .control-color {
@@ -1750,6 +1779,10 @@ body {
 
 .select-control:active {
     opacity: 0.3;
+}
+
+.select-control:disabled {
+    opacity: 0.2;
 }
 
 .select-control:focus {
@@ -1958,6 +1991,10 @@ body {
 .pagination-show-more:active {
     border-color: #C4C4C4;
     color: #C4C4C4;
+}
+
+.pagination-show-more:disabled {
+    opacity: 0.3;
 }
 
 .pagination-container {
@@ -2210,7 +2247,7 @@ body {
   }
 
 .modal-container-close {
-    /* display: none; */
+    display: none;
 }
 
 .modal-wrapper {
@@ -2272,6 +2309,7 @@ body {
     font-family: 'Rubik', sans-serif;
     font-size: 16px;
     width: 360px;
+    height: 60px;
     background-color: #F0F0F0;
     border: none;
     padding: 20px;
@@ -2297,6 +2335,7 @@ body {
     font-family: 'Rubik', sans-serif;
     font-size: 16px;
     width: 360px;
+    height: 60px;
     background-color: #F0F0F0;
     border: none;
     padding: 20px;
@@ -2352,6 +2391,7 @@ body {
     font-family: 'Rubik', sans-serif;
     font-size: 16px;
     width: 540px;
+    height: 60px;
     background-color: #F0F0F0;
     border: none;
     padding: 20px;
