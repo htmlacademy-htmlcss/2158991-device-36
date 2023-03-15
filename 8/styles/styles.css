@@ -184,19 +184,19 @@ body {
 }
 
 .navigation-item-user:focus,
-.navigation-item:focus,
+.navigation-link:focus,
 .cite-navigation-item:focus {
     outline: 2px solid #AF4FFF;
 }
 
 .navigation-item-user:hover,
-.navigation-item:hover,
+.navigation-link:hover,
 .cite-navigation-item:not(:first-child):hover {
     opacity: 0.6;
 }
 
 .navigation-item-user:active,
-.navigation-item:active,
+.navigation-link:active,
 .cite-navigation-item:not(:first-child):active {
     opacity: 0.3;
 }
@@ -207,23 +207,13 @@ body {
     margin-top: 30px;
 }
 
-.cite-navigation-item {
-    padding: 15px 23.6px;
-}
-
 .cite-navigation-item:first-child {
     margin-top: -1px;
     margin-right: auto;
-    padding: 0;
-}
-
-.cite-navigation-item:nth-child(2) {
-    padding-right: 21px;
 }
 
 .cite-navigation-item:last-child {
     margin-right: -4px;
-    padding-right: 0;
 }
 
 .navigation-link-user {
@@ -320,6 +310,23 @@ body {
     line-height: 21px;
     text-transform: uppercase;
     letter-spacing: 0.2em;
+    padding: 15px 23.6px;
+}
+
+.cite-navigation-link-active {
+    text-decoration: underline 3px;
+}
+
+.cite-navigation-item:first-child .cite-navigation-link {
+    padding: 0;
+}
+
+.cite-navigation-item:nth-child(2) .cite-navigation-link {
+    padding-right: 21px;
+}
+
+.cite-navigation-item:last-child .cite-navigation-link {
+    padding-right: 0;
 }
 
 .cite-navigation-item-catalog {
@@ -427,6 +434,18 @@ body {
     line-height: 18px;
 }
 
+.cite-navigation-catalog-link:hover {
+    opacity: 0.6;
+}
+
+.cite-navigation-catalog-link:active {
+    opacity: 0.3;
+}
+
+.cite-navigation-catalog-link-active {
+    text-decoration: underline 2px;
+}
+
 .main-slider {
     position: relative;
     width: 1160px;
@@ -517,6 +536,7 @@ body {
     position: absolute;
     background-color: #FFE17F;
     z-index: -1;
+    transition: all 0.4s ease;
 }
 
 .slider-link:focus {
@@ -525,7 +545,6 @@ body {
 
 .slider-link:hover::before {
     height: 100%;
-    transition: all 0.4s ease;
 }
 
 .slider-link:active::before {
@@ -767,6 +786,7 @@ body {
     background-color: #FFE17F;
     left: 0;
     z-index: -1;
+    transition: all 0.4s ease;
 }
 
 .services-button:focus {
@@ -775,7 +795,6 @@ body {
 
 .services-button:hover::before  {
     height: 100%;
-    transition: all 0.4s ease;
 }
 
 .services-button:active::before  {
@@ -788,14 +807,8 @@ body {
     background-color: #000000;
 }
 
-.services-button-current:hover {
-    justify-content: end;
-}
-
-.services-button-current:active {
-    justify-content: end;
-}
-
+.services-button-current:hover,
+.services-button-current:active,
 .services-button-current:focus {
     justify-content: end;
 }
@@ -841,6 +854,7 @@ body {
     width: 125px;
     height: 100px;
     background-color: #FFE17F;
+    transition: 0.5s opacity;
 }
 
 .delivery-info-icon {
@@ -868,12 +882,14 @@ body {
 
 .delivery-button:hover .delivery-icon {
     background-color: #FFC700;
-    transition: 0.5s;
+}
+
+.delivery-info-icon-g {
+    transition: 0.5s opacity;
 }
 
 .delivery-button:hover .delivery-info-icon-g {
     opacity: 1;
-    transition: 0.5s;
 }
 
 .delivery-button:active {
@@ -1006,6 +1022,7 @@ body {
     background-color: #FFE17F;
     left: 0;
     z-index: -1;
+    transition: all 0.4s ease;
 }
 
 .about-us-link:focus,
@@ -1016,7 +1033,6 @@ body {
 .about-us-link:hover::before,
 .contacts-link:hover::before {
     height: 100%;
-    transition: all 0.4s ease;
 }
 
 .about-us-link:active::before,
@@ -1321,12 +1337,12 @@ body {
     outline: 2px solid #AF4FFF;
 }
 
-.footer-social-item:hover .telegram-icon circle {
+.footer-social-item:hover .social-icon circle {
     fill: #FFC700;
     fill-opacity: 1;
 }
 
-.footer-social-item:active .telegram-icon g {
+.footer-social-item:active .social-icon g {
     opacity: 0.3;
 }
 
@@ -1385,11 +1401,11 @@ body {
     color: #000000;
     font-size: 16px;
     line-height: 20px;
+    transition: 0.5s opacity;
 }
 
 .breadcrumbs-link:hover {
     opacity: 0.6;
-    transition: 0.5s;
 }
 
 .breadcrumbs-link:active {
@@ -1657,6 +1673,7 @@ body {
     background-color: #FFE17F;
     left: 0;
     z-index: -1;
+    transition: all 0.4s ease;
 }
 
 .catalog-filter-button:focus {
@@ -1665,7 +1682,6 @@ body {
 
 .catalog-filter-button:hover::before {
     height: 100%;
-    transition: all 0.4s ease;
 }
 
 .catalog-filter-button:active::before {
@@ -1864,11 +1880,11 @@ body {
     background-color: #FFE17F;
     left: 0;
     z-index: -1;
+    transition: all 0.4s ease;
 }
 
 .product-card-button span:hover::before {
     height: 100%;
-    transition: all 0.4s ease;
 }
 
 .product-card-button span:active::before {
@@ -2027,16 +2043,19 @@ body {
 }
 
 .popover {
-    display: none;
+    /* display: none; */
     position: absolute;
     z-index: 2;
     width: 320px;
     box-sizing: border-box;
-    top: 10;
     left: -126px;
 }
 
 .popover-open {
+    display: block;
+}
+
+.navigation-button:hover + .popover, .popover:hover {
     display: block;
 }
 
@@ -2052,7 +2071,8 @@ body {
 .popover-cart-container::before {
     content: '';
     position: absolute;
-    border: 7px solid transparent; border-bottom: 7px solid #000000;
+    border: 7px solid transparent;
+    border-bottom: 7px solid #000000;
     top: -14px;
     left: 153px;
 }
@@ -2068,19 +2088,42 @@ body {
 }
 
 .product-cart-title {
+    word-break: break-all;
     color: #FFFFFF;
     padding-left: 23px;
     margin: 0;
 }
 
 .product-cart-button {
+    position: relative;
     align-self: flex-start;
     margin-left: auto;
     background-color: transparent;
     border: none;
     cursor: pointer;
-    margin-right: -6px;
-    margin-top: -1px;
+}
+
+.product-cart-button::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 0;
+    right: 0;
+    background-image: url("../images/cross.svg");
+    background-repeat: no-repeat;
+}
+
+.product-cart-button:hover::before {
+    opacity: 0.6;
+}
+
+.product-cart-button:active::before {
+    opacity: 0.3;
+}
+
+.product-cart-button:focus::before {
+    outline: 2px solid #AF4FFF;
 }
 
 .popover-product-num,
@@ -2410,16 +2453,6 @@ body {
     left: 29px;
 }
 
-.modal-button-send::before {
-    position: absolute;
-    content: "";
-    width: 200px;
-    height: 8px;
-    background-color: #FFE17F;
-    left: 0;
-    z-index: -1;
-}
-
 .modal-button-send {
     display: flex;
     align-items: center;
@@ -2442,13 +2475,23 @@ body {
     cursor: pointer;
 }
 
+.modal-button-send::before {
+    position: absolute;
+    content: "";
+    width: 200px;
+    height: 8px;
+    background-color: #FFE17F;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s ease;
+}
+
 .modal-button-send:focus {
     outline: 2px solid #AF4FFF;
 }
 
 .modal-button-send:hover::before {
     height: 100%;
-    transition: all 0.4s ease;
 }
 
 .modal-button-send:active::before {
