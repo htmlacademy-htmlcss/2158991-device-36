@@ -46,7 +46,7 @@
                                                 <img class="product-cart-img" src="images/catalog-product/product-1.jpg" width="39" height="43" alt="Любительская селфи-палка.">
                                                 <p class="product-cart-title">Любительская<br> селфи-палка</p>
                                             </a>
-                                            <button class="product-cart-button">
+                                            <button class="product-cart-button" type="button">
                                                 <span class="visually-hidden">Удалить из корзины.</span>
                                             </button>
                                         </li>
@@ -55,7 +55,7 @@
                                                 <img class="product-cart-img" src="images/catalog-product/product-2.jpg" width="39" height="43" alt="Профессиональная селфи-палка.">
                                                 <p class="product-cart-title">Профессиональная<br> селфи-палка</p>
                                             </a>
-                                            <button class="product-cart-button">
+                                            <button class="product-cart-button" type="button">
                                                 <span class="visually-hidden">Удалить из корзины.</span>
                                             </button>
                                         </li>
@@ -75,7 +75,9 @@
                 <ul class="cite-navigation-list">
                     <li class="cite-navigation-item cite-navigation-item-catalog">
                         <a class="cite-navigation-link" href="#">Каталог товаров</a>
-                        <button class="cite-navigation-button cite-navigation-button-opened"></button>
+                        <button class="cite-navigation-button cite-navigation-button-opened" type="button">
+                            <span class="visually-hidden">Открыть каталог товаров.</span>
+                        </button>
                         <ul class="cite-navigation-catalog-list">
                             <li class="cite-navigation-catalog-item">
                                 <a class="cite-navigation-catalog-link" href="#">Виртуальная реальность</a>
@@ -203,14 +205,14 @@
                                 <ul class="catalog-filter-list catalog-filter-list-bluetooth">
                                     <li class="catalog-filter-item">
                                         <label class="control">
-                                            <input class="visually-hidden control-input" type="radio" name="catalog-filter-bluetooth" checked>
+                                            <input class="visually-hidden control-input" type="radio" name="catalog-filter-bluetooth" value="bluetooth" checked>
                                             <span class="control-bluetooth control-bluetooth-current"></span>
                                             Есть
                                         </label>
                                     </li>
                                     <li class="catalog-filter-item">
                                         <label class="control">
-                                            <input class="visually-hidden control-input" type="radio" name="catalog-filter-bluetooth">
+                                            <input class="visually-hidden control-input" type="radio" name="catalog-filter-bluetooth" value="no-bluetooth">
                                             <span class="control-bluetooth"></span>
                                             Нет
                                         </label>
@@ -421,37 +423,41 @@
             <div class="modal-wrapper">
                 <div class="modal-title-container">
                     <h2 class="modal-title">Доставка под заказ</h2>
-                    <button class="modal-close-button"></button>
+                    <button class="modal-close-button" type="button"></button>
                 </div>
                 <form class="modal-form" action="https://echo.htmlacademy.ru/" method="get">
                     <div class="modal-form-name-email">
-                        <fieldset class="fieldset-name">
-                            <legend class="legend-name">Ваше имя:</legend>
-                            <input class="input-name" required type="text" placeholder="Введите имя" name="name">
-                        </fieldset>
-                        <fieldset class="fieldset-email fieldset-email-invalid">
-                            <legend class="legend-email">Ваш e-mail:</legend>
-                            <input class="input-email" required type="email" value="почта" name="e-mail">
-                            <p>Забавный у вас адрес</p>
-                        </fieldset>
+                        <p class="fieldset-name">
+                            <label class="label-name" for="name">Ваше имя:</label>
+                            <input class="input-name" type="text" id="name" name="name" placeholder="Введите имя" required>
+                        </p>
+                        <p class="fieldset-email fieldset-email-invalid">
+                            <label class="label-email" for="e-mail">Ваш e-mail:</label>
+                            <input class="input-email" type="email" value="почта" id="e-mail" name="e-mail" placeholder="Введите e-mail" required>
+                            <span>Забавный у вас адрес</span>
+                        </p>
                     </div>
                     <div class="modal-bring-quantity">
-                        <fieldset class="fieldset-bring">
-                            <legend class="legend-bring">Что нужно привезти:</legend>
-                            <input class="input-bring" required type="text" placeholder="В свободной форме" name="bring-text">
-                        </fieldset>
-                        <fieldset class="fieldset-quantity">
-                                <legend class="legend-quantity">Количество:</legend>
-                                <div class="legend-quantity-info">
-                                    <p class="legend-quantity-info-p">Постараемся найти, сколько нужно. Привезём сколько получится по
-                                    требованиям <br>к провозу багажа.</p>
-                                </div>
-                            <div class="legend-button-container">
-                                <button class="legend-button-less" type="button"></button>
-                                <input class="quantity-input-numbers" type="number" value="1" name="quantity">
-                                <button class="legend-button-more" type="button"></button>
-                            </div>
-                        </fieldset>
+                        <p class="fieldset-bring">
+                            <label class="label-bring" for="bring-text">Что нужно привезти:</label>
+                            <input class="input-bring" type="text" id="bring-text" name="bring-text" placeholder="В свободной форме" required>
+                        </p>
+                        <p class="fieldset-quantity">
+                            <label class="label-quantity" for="quantity">Количество:</label>
+                            <span class="legend-quantity-info">
+                                <span class="legend-quantity-info-p">Постараемся найти, сколько нужно. Привезём сколько получится по
+                                требованиям <br>к провозу багажа.</span>
+                            </span>
+                            <span class="legend-button-container">
+                                <button class="legend-button-less" type="button">
+                                    <span class="visually-hidden">Меньше.</span>
+                                </button>
+                                <input class="quantity-input-numbers" type="number" value="1" id="quantity" name="quantity">
+                                <button class="legend-button-more" type="button">
+                                    <span class="visually-hidden">Больше.</span>
+                                </button>
+                            </span>
+                        </p>
                     </div>
                     <button class="modal-button-send" type="submit">Отправить</button>
                 </form>
